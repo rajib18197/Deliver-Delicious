@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import CardList from "./CardList";
 
-const StyledContent = styled.div``;
+const StyledContent = styled.div`
+  overflow: hidden;
+`;
 
-export default function Content() {
+export default function Content({ list, slide }) {
   return (
     <StyledContent>
-      <CardList />
+      <CardList list={list} slide={slide} />
     </StyledContent>
   );
 }
