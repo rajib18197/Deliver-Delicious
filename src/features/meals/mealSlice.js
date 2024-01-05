@@ -24,23 +24,22 @@ const mealsSlice = createSlice({
 
   reducers: {
     increasePopularSlide: (state, action) => {
-      state.popularSlide += 5;
+      state.popularSlide += 1;
     },
 
     decreasePopularSlide: (state, action) => {
-      state.popularSlide -= 5;
+      state.popularSlide -= 1;
     },
 
     increaseRecommendedSlide: (state, action) => {
-      state.recommendedSlide += 5;
+      state.recommendedSlide += 1;
     },
 
     decreaseRecommendedSlide: (state, action) => {
-      state.recommendedSlide -= 5;
+      state.recommendedSlide -= 1;
     },
 
     addMeal: (state, action) => {
-      // state.results.push(action.payload);
       state.results = [action.payload, ...state.results];
     },
   },

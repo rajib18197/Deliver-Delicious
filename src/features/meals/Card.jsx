@@ -7,7 +7,8 @@ const StyledCard = styled.div`
   left: 0;
   width: 19rem;
   height: 25rem;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  /* margin: 2rem; */
 `;
 
 const Img = styled.img`

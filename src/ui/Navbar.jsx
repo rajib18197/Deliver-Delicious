@@ -8,8 +8,17 @@ const Nav = styled.nav`
   display: grid;
   grid-template-columns: 0.8fr 2fr 0.7fr 0.8fr;
   align-items: center;
-  width: 100rem;
+  max-width: 100rem;
   margin: 0 auto;
+  padding: 2rem 0 1rem 0;
+
+  @media (max-width: 59em) {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  @media (max-width: 42em) {
+    grid-template-columns: 0.3fr 1fr 1fr;
+  }
 `;
 
 const UserButton = styled.button`
@@ -29,6 +38,10 @@ const UserButton = styled.button`
     height: 2.5rem;
     width: 2.5rem;
     fill: white;
+  }
+
+  @media (max-width: 42em) {
+    display: none;
   }
 `;
 

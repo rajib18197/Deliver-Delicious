@@ -44,6 +44,7 @@ const Container = styled.div`
   flex-direction: column;
   gap: 0.4rem;
   width: 100%;
+  z-index: 1000;
 `;
 
 const Button = styled.button`
@@ -58,15 +59,18 @@ const Button = styled.button`
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  z-index: 1000;
 
   ${(props) =>
     props.active === "true" &&
     css`
-      background-color: #888;
+      background-color: #d4d3d3;
+      color: #b34a11;
     `}
 
   &:hover {
-    background-color: #888;
+    background-color: #d4d3d3;
+    color: #b34a11;
   }
 `;
 

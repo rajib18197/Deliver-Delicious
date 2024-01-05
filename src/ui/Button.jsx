@@ -23,35 +23,18 @@ const sizes = {
 const variations = {
   primary: css`
     color: white;
-    background-color: green;
+    background-color: #f97316;
 
     &:hover {
-      background-color: greenyellow;
-    }
-  `,
-  secondary: css`
-    color: var(--color-grey-600);
-    background: var(--color-grey-0);
-    border: 1px solid var(--color-grey-200);
-
-    &:hover {
-      background-color: var(--color-grey-50);
-    }
-  `,
-  danger: css`
-    color: var(--color-red-100);
-    background-color: var(--color-red-700);
-
-    &:hover {
-      background-color: var(--color-red-800);
+      background-color: #ea580c;
     }
   `,
 };
 
 const Button = styled.button`
   border: none;
-  border-radius: var(--border-radius-sm);
-  box-shadow: var(--shadow-sm);
+  border-radius: 4px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
 
   ${(props) => sizes[props.size]}
   ${(props) => variations[props.variation]}

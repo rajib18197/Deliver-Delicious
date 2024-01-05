@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Logo from "./Logo";
 import { IoLogoGoogle, IoLogoTwitter, IoLogoInstagram } from "react-icons/io";
+import { FaArrowRightLong } from "react-icons/fa6";
 import img2 from "../assets/Image2.png";
 
 const socialLinks = [
@@ -11,7 +12,7 @@ const socialLinks = [
 
 const StyledFooter = styled.div`
   padding: 3rem;
-  background-color: #f97316;
+  background-color: #eab308;
 `;
 
 const Container = styled.div`
@@ -20,13 +21,23 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 9.6rem;
+
+  /**************************/
+  /* BELOW 944px */
+  /**************************/
+
+  @media (max-width: 59em) {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+  }
 `;
 
 const SubscribeBox = styled.input`
   background-color: #ffffff;
   border: none;
   padding: 0.7rem 2rem;
-  border-radius: 6px;
+  border-radius: 11px;
   width: 68%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -35,7 +46,15 @@ const SubscribeBox = styled.input`
   &::-webkit-input-placeholder {
     color: #c4c2c2;
     font-size: 1.3rem;
-    /* transform: translateX(20px); */
+  }
+
+  /**************************/
+  /* BELOW 944px */
+  /**************************/
+
+  @media (max-width: 59em) {
+    /* margin: 0 auto; */
+    width: 100%;
   }
 `;
 const FooterTextBox = styled.div`
@@ -43,12 +62,29 @@ const FooterTextBox = styled.div`
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
   height: max-content;
-  /* background-color: green; */
   margin-top: 3rem;
+
+  /**************************/
+  /* BELOW 944px */
+  /**************************/
+
+  @media (max-width: 59em) {
+    margin-bottom: 3rem;
+    /* width: max-content;
+    margin: auto; */
+  }
 `;
 const FooterImageBox = styled.div`
   grid-row: 1 / span 2;
   grid-column: 2 / -1;
+
+  /**************************/
+  /* BELOW 944px */
+  /**************************/
+
+  @media (max-width: 59em) {
+    display: none;
+  }
 `;
 
 const Button = styled.button`
@@ -61,7 +97,7 @@ const Button = styled.button`
 
   display: inline-block;
   padding: 1.3rem 2rem;
-  background-color: purple;
+  background-color: #ea580c;
   color: white;
   border-radius: 10px;
   font-size: 1.6rem;
@@ -70,16 +106,27 @@ const Button = styled.button`
   align-items: center;
   border: none;
   outline: none;
+  gap: 0.6rem;
 
   & svg {
     width: 2rem;
     height: 2rem;
-    fill: orangered;
+    fill: white;
+  }
+
+  @media (max-width: 59em) {
+    right: 1%;
+    transform: translate(0, -50%);
+    background: none;
+    color: #ea580c;
+
+    & svg {
+      fill: #ea580c;
+    }
   }
 `;
 
 const Copyright = styled.div`
-  /* background-color: green; */
   align-self: start;
 
   display: flex;
@@ -87,12 +134,40 @@ const Copyright = styled.div`
   align-items: center;
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
+
+  & p {
+    color: #121212;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-weight: 600;
+  }
+  /**************************/
+  /* BELOW 944px */
+  /**************************/
+
+  @media (max-width: 59em) {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+
+    & p {
+      margin-top: 1rem;
+    }
+  }
 `;
 
 const Socials = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
+
+  /**************************/
+  /* BELOW 944px */
+  /**************************/
+
+  @media (max-width: 59em) {
+    order: -1;
+  }
 `;
 
 const SocialButton = styled.button`
@@ -105,13 +180,13 @@ const SocialButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: orangered;
+  background-color: white;
   justify-self: end;
 
   & svg {
     height: 2rem;
     width: 2rem;
-    fill: white;
+    fill: #ea580c;
   }
 `;
 
@@ -127,7 +202,9 @@ export default function Footer() {
       <Container>
         <FooterTextBox>
           <SubscribeBox placeholder="Enter Your Email" />
-          <Button>Subscribe</Button>
+          <Button>
+            Subscribe <FaArrowRightLong />
+          </Button>
         </FooterTextBox>
 
         <Copyright>
@@ -135,7 +212,7 @@ export default function Footer() {
             <Logo color="white">
               Pti<span>.</span>
             </Logo>
-            <p>Copyright Tripp.All right Reserved</p>
+            <p>Copyright&copy;Tripp.All right Reserved</p>
           </div>
 
           <Socials>

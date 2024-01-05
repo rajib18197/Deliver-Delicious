@@ -82,7 +82,7 @@ export default function CreateMeal() {
       </FormRow>
 
       <FormRow>
-        <Button>Add Food</Button>
+        <Button>Add New Meal</Button>
       </FormRow>
     </Form>
   );

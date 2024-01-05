@@ -25,6 +25,15 @@ const StyledFormRow = styled.div`
     justify-content: flex-end;
     gap: 1.2rem;
   }
+
+  /**************************/
+  /* BELOW 944px  */
+  /**************************/
+
+  @media (max-width: 59em) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 `;
 
 const Label = styled.label`
@@ -33,7 +42,7 @@ const Label = styled.label`
 
 const Error = styled.span`
   font-size: 1.4rem;
-  color: var(--color-red-700);
+  color: #b91c1c;
 `;
 
 function FormRow({ label, error, children }) {

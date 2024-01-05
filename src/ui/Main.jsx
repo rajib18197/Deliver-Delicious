@@ -17,9 +17,7 @@ export default function Main() {
     useSelector(getMeals);
 
   const popularList = results?.filter((res) => res.isPopular);
-  console.log(popularList);
   const recommendedList = results?.filter((res) => res.isRecommended);
-  console.log(recommendedList);
 
   useEffect(
     function () {
@@ -40,15 +38,20 @@ export default function Main() {
             list={popularList}
             slide={popularSlide}
             name={"Popular"}
+            // key={crypto.randomUUID()}
+            key={results[0].id}
           />
 
           <MealContainer
             list={recommendedList}
             slide={recommendedSlide}
             name={"Recommended"}
+            key={results[0].name}
           />
         </>
       )}
     </StyledMain>
   );
 }
+
+// same element, same position, that's why new food is overlap with first food. so we need key props but if we define unique key then every slide change new key will be generated and animation won't happen because everything is regenerated from scratch.
