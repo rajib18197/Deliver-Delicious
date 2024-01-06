@@ -1,20 +1,19 @@
 # **Deliver Delicious**
 
-> ## How to run
+## **How to run**
 
 Please follow the below instructions to run this project in your computer:
 
 1.  Clone this repository
-
-        git clone https://github.com/rajib18197/Deliver-Delicious.git
+    git clone https://github.com/rajib18197/Deliver-Delicious.git
 
 2.  Install all the dependencies
-
-        npm install
+    npm install
 
 3.  Run
+    npm run dev
 
-        npm run dev
+## **Project Description**
 
 > ### It's a simple, useful and fun little `Meal Delivery App` with features like load meals from API carousels to show the list of popular and Recommended meals, new Meal creation Form and overall a beautiful design that showcase the business.
 
@@ -28,9 +27,11 @@ Please follow the below instructions to run this project in your computer:
 >
 > For Styling I used styled-components as It has many benefits e.g. don't have to think className, can write JavaScript etc. The Project is completely responsive as well.
 
-### While building, I try to focus on:
+## **While building, I try to focus on**
 
 - makes simple & Elegant looking design
 - Used Technology such as, React, Redux, Styled Components, React Hook form & React Icons
 - Fully Responsive Design
 - Clean Code and Independent (meaning component is Re-usable)
+
+Project Link: (https://deliver-delicious.vercel.app/)
