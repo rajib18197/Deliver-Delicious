@@ -3,9 +3,7 @@ const API_URL =
 
 export async function getAllMeals() {
   try {
-    const response = await fetch(`${API_URL}`, {
-      referrerPolicy: "unsafe_url",
-    });
+    const response = await fetch(`${API_URL}`);
     if (!response.ok)
       throw new Error("Could not load meals data! Please try again.");
 
