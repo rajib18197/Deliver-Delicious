@@ -13,6 +13,7 @@ Please follow the below instructions to run this project in your computer:
         npm install
 
 3.  Run
+
         npm run dev
 
 ## **Project Description**
