@@ -37,4 +37,4 @@ Please follow the below instructions to run this project in your computer:
 - Fully Responsive Design
 - Clean Code and Independent (meaning component is Re-usable)
 
-Project Link: (https://deliver-delicious.vercel.app/)
+Project Link: https://deliver-delicious.vercel.app/
