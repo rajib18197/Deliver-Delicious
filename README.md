@@ -4,14 +4,16 @@
 
 Please follow the below instructions to run this project in your computer:
 
-1.Clone this repository
-`git clone https://github.com/rajib18197/Deliver-Delicious.git`
+1.  Clone this repository
+
+        git clone https://github.com/rajib18197/Deliver-Delicious.git
 
 2.  Install all the dependencies
-    npm install
+
+        npm install
 
 3.  Run
-    npm run dev
+        npm run dev
 
 ## **Project Description**
 
