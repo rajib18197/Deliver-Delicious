@@ -6,21 +6,15 @@ Please follow the below instructions to run this project in your computer:
 
 1.  Clone this repository
 
-        ```
         git clone https://github.com/rajib18197/Deliver-Delicious.git
-        ```
 
 2.  Install all the dependencies
 
-        ```
         npm install
-        ```
 
 3.  Run
 
-        ```
         npm run dev
-        ```
 
 > ### It's a simple, useful and fun little `Meal Delivery App` with features like load meals from API carousels to show the list of popular and Recommended meals, new Meal creation Form and overall a beautiful design that showcase the business.
 
